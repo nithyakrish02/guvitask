@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register </title>
+    <link rel="stylesheet" href="css/register.css">
+    </head>
+    <body>
+        <nav>
+            <div class="menu">
+              <div class="logo">
+                <a href="#">Guvi task</a>
+              </div>
+              <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a  href="login.html">Login</a></li>
+              </ul>
+            </div>
+        </nav>
+<div class=center>
+     <center>   
+	<!--Step 1 : Adding HTML-->
+	<form action="php/register.php">
+		<div class="imgcontainer">
+			<img src= "assets/demo logo.png"
+				alt="Avatar" class="avatar" width="1000" height="100">
+		</div>
+
+		<div class="container">
+			
+			<input type="text" placeholder="Enter Username" name="uname" required>
+
+			
+			<input type="text" placeholder="Enter email ID/Mobileno" name="uname" required>
+			
+			
+			 
+<input type = "password"  placeholder= "Enter Password"id = "pswd1" value = ""> 
+<span id = "message1" style="color:red"> </span> <br>
+
+<!?Enter confirm password -->
+
+<input type = "password" placeholder="Confrim Password" id = "pswd2" value = ""> 
+<span id = "message2" style="color:red"> </span> <br><br>
+			<button type="submit" onclick="matchPassword()">Register</button>
+		</div>
+
+		<div class="container" style="background-color:#f1f1f1">
+			<button type="button" class="cancelbtn">Cancel</button>
+			
+		</div>
+	</form>
+</center>
+        </div>
+        <script src="js/register.js"></script>
+       
+    </body>
+    
+    </html>
